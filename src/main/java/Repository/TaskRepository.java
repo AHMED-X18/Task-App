@@ -2,8 +2,13 @@ package Repository;
 import Models.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
+import java.util.Date;
 
 public interface TaskRepository extends JpaRepository<Task,Integer> {
-    List<Task> findByname(String nom);
+    Task findByLibelle(String name);
+
+    Task findByDate(Date date);
+
+    Task findById(int id);
+
 }

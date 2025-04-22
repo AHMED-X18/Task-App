@@ -45,10 +45,10 @@ public class UserService {
         if (new_user==null){
             throw new RuntimeException("Utilisateur non trouvé");
         }
-        user.setEmail(user.getEmail());
-        user.setPassword(hashPassword(user.getPassword()));
+        new_user.setEmail(user.getEmail());
+        new_user.setPassword(hashPassword(user.getPassword()));
 
-        return UserRepository.save(user);
+        return UserRepository.save(new_user);
     }
 
     public void deleteUser(String identifiant) {
