@@ -1,0 +1,4 @@
+### Taux de participation
+- AHMED JALIL TADIDA : 33%
+- MELI KUETE ALEX : 33%
+- ATCHINE OUDAM HANNIEL : 33%
