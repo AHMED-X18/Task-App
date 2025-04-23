@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - Inscription</title>
+    <link rel="stylesheet" href="css/inscription.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="app-title">Todo App</h1>
+    <div class="signup-card">
+        <h2 class="signup-title">Sign up</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password"
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number (optional)</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the Terms and Conditions</label>
+            </div>
+            <button type="submit" class="btn">Create Account</button>
+            <div class="login-link">
+                <p>Already have an account? <a href="#">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
