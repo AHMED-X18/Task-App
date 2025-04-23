@@ -1,6 +1,6 @@
-package Service;
-import Models.User;
-import Repository.UserRepository;
+package com.hackaton.Task.app.Service;
+import com.hackaton.Task.app.Models.User;
+import com.hackaton.Task.app.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.stereotype.Service;

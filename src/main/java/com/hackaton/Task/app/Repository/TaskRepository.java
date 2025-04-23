@@ -1,5 +1,5 @@
-package Repository;
-import Models.Task;
+package com.hackaton.Task.app.Repository;
+import com.hackaton.Task.app.Models.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Date;

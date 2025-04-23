@@ -1,8 +1,10 @@
-package Models;
+package com.hackaton.Task.app.Models;
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.*;
 
+@Data
 @Entity
 @Table (name="Tasks")
 public class Task {
@@ -25,7 +27,7 @@ public class Task {
 
     private LocalDateTime rappel; // Utilisé pour l'alarme
 
-    // Getters et Setters
+    /* Getters et Setters
 
     public int getId() {
         return id;
@@ -90,4 +92,5 @@ public class Task {
     public void setRappel(LocalDateTime rappel) {
         this.rappel = rappel;
     }
+    */
 }

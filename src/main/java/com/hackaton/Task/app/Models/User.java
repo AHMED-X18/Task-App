@@ -1,6 +1,8 @@
-package Models;
+package com.hackaton.Task.app.Models;
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 @Table (name="users")
 public class User {
@@ -14,6 +16,7 @@ public class User {
     @Column(nullable = false)
     private String password;
 
+    /*
     public String getEmail() {
         return email;
     }
@@ -37,4 +40,5 @@ public class User {
     public void setUsername(String username) {
         this.username = username;
     }
+     */
 }

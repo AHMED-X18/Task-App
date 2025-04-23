@@ -1,5 +1,5 @@
-package Repository;
-import Models.User;
+package com.hackaton.Task.app.Repository;
+import com.hackaton.Task.app.Models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User,String>{

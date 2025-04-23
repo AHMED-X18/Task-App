@@ -1,6 +1,6 @@
-package Service;
-import Models.Task;
-import Repository.TaskRepository;
+package com.hackaton.Task.app.Service;
+import com.hackaton.Task.app.Models.Task;
+import com.hackaton.Task.app.Repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.jetbrains.annotations.*;
