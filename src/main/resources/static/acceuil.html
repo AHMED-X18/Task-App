@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - Gestion des tâches</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/acceuil.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 class="app-title">Todo App</h1>
+    </header>
+
+    <div class="search-bar">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="searchInput" placeholder="Rechercher des tâches...">
+    </div>
+
+    <div class="task-list" id="taskList">
+        <!-- Les tâches seront ajoutées dynamiquement ici -->
+        <div class="empty-state">
+            <i class="fas fa-tasks"></i>
+            <p>Aucune tâche pour le moment</p>
+            <p class="task-date">Commencez par ajouter votre première tâche</p>
+        </div>
+    </div>
+
+    <div class="add-task-panel">
+        <button class="add-task-btn" id="addTaskBtn">
+            <i class="fas fa-plus"></i> Ajouter une tâche
+        </button>
+    </div>
+</div>
+
+<!-- Modal pour ajouter/modifier une tâche -->
+<div class="modal" id="taskModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title" id="modalTitle">Nouvelle tâche</h2>
+            <button class="close-modal" id="closeModal">&times;</button>
+        </div>
+        <form id="taskForm">
+            <input type="hidden" id="taskId">
+            <div class="form-group">
+                <label for="taskName">Libellé</label>
+                <input type="text" id="taskName" required>
+            </div>
+            <div class="form-group">
+                <label for="taskLabel">Étiquette</label>
+                <select id="taskLabel">
+                    <option value="">Sélectionner une étiquette</option>
+                    <option value="Travail">Travail</option>
+                    <option value="Personnel">Personnel</option>
+                    <option value="Etudes">Études</option>
+                    <option value="Activités">Activités</option>
+                    <option value="Autre">Autres</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="taskDate">Date</label>
+                    <input type="date" id="taskDate">
+                </div>
+                <div class="form-group">
+                    <label for="taskTime">Heure</label>
+                    <input type="time" id="taskTime">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Priorité</label>
+                <div class="priority-options">
+                    <div class="priority-option">
+                        <input type="radio" name="priority" id="priorityHigh" value="Importante">
+                        <label for="priorityHigh">Importante</label>
+                    </div>
+                    <div class="priority-option">
+                        <input type="radio" name="priority" id="priorityMedium" value="Moyenne" checked>
+                        <label for="priorityMedium">Moyenne</label>
+                    </div>
+                    <div class="priority-option">
+                        <input type="radio" name="priority" id="priorityLow" value="Faible">
+                        <label for="priorityLow">Faible</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="taskReminder">
+                    <label for="taskReminder">Activer l'alarme de rappel</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="taskStatus">Statut</label>
+                <select id="taskStatus">
+                    <option value="En attente">En attente</option>
+                    <option value="En cours">En cours</option>
+                    <option value="Terminé">Terminé</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel" id="cancelTask">Annuler</button>
+                <button type="submit" class="btn btn-save" id="save">Enregistrer</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/acceuil.js"></script>
+</body>
+</html>

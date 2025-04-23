@@ -3,17 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+}
 
-  body {
-    background: linear-gradient(120deg, #128823, #0d890a);
+body {
+    background: linear-gradient(120deg, #007BFF, #0056b3);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+}
 
-  .container {
+.container {
     width: 800px;
     height: 450px;
     display: flex;
@@ -21,68 +21,68 @@
     border-radius: 20px;
     overflow: hidden;
     background-color: white;
-  }
+}
 
-  .left-panel {
+.left-panel {
     width: 50%;
-    background: linear-gradient(135deg, #0ca01d, #1b9d26);
+    background: linear-gradient(135deg, #0056b3, #004494);
     color: white;
     padding: 50px 30px;
-  }
+}
 
-  .left-panel h2 {
+.left-panel h2 {
     font-size: 32px;
     margin-bottom: 10px;
-  }
+}
 
-  .left-panel p {
+.left-panel p {
     font-size: 16px;
     opacity: 0.9;
-  }
+}
 
-  .right-panel {
+.right-panel {
     width: 50%;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+}
 
-  .right-panel h2 {
+.right-panel h2 {
     margin-bottom: 25px;
-    color: #333;
-  }
+    color: #0000FF;
+}
 
-  .input-group {
+.input-group {
     margin-bottom: 20px;
-  }
+}
 
-  .input-group input {
+.input-group input {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 14px;
-  }
+}
 
-  .options {
+.options {
     display: flex;
     justify-content: space-between;
     font-size: 13px;
     margin-bottom: 20px;
-  }
+}
 
-  .options label {
+.options label {
     display: flex;
     align-items: center;
-  }
+}
 
-  .options input {
+.options input {
     margin-right: 6px;
-  }
+}
 
-  .login-btn {
-    background-color: #3eff6b;
+.login-btn {
+    background-color: #007BFF;
     border: none;
     padding: 12px;
     border-radius: 10px;
@@ -90,20 +90,20 @@
     font-size: 16px;
     cursor: pointer;
     transition: background 0.3s;
-  }
+}
 
-  .login-btn:hover {
-    background-color: #33e033;
-  }
+.login-btn:hover {
+    background-color: #0056b3;
+}
 
-  .signup-link {
+.signup-link {
     margin-top: 20px;
     font-size: 13px;
     text-align: center;
-  }
+}
 
-  .signup-link a {
-    color: #4bff3e;
+.signup-link a {
+    color: #0000FF;
     text-decoration: none;
     font-weight: bold;
-  }
+}
