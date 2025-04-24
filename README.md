@@ -5,3 +5,4 @@ Le projet présenté ainsi est une application to do app, qui permet d'organiser
 - 
 L'utilisateur a donc la possiblité de créer des taches, de les modifier ou de les supprimer à sa guise. Il a aussi l'abilité de faire des recherches ou de filtrer ses évènements.
 
+Pour accéder à l'application, l'URL à taper est localhost:8080/login.html
